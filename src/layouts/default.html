@@ -1,16 +1,27 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Foundation</title>
-    <link rel="stylesheet" href="{{assets}}/css/app.css" />
-    <script src="{{assets}}/js/modernizr.js"></script>
-  </head>
-  <body>
+<!-- HTML Head -->
+{{>_head}}
 
-    {{>body}}
-    
-    <script src="{{assets}}/js/all.js"></script>
-  </body>
+<body>
+
+<!-- Page Header -->
+{{>_header}}
+
+<!-- Banner (Image) -->
+<div class="row">
+  <div class="large-12 columns">
+	{{>_pagebanner}}
+  </div>
+</div>
+
+<!-- Page Content -->
+<section id="content" class="row">
+	<div class="large-12 columns">
+	{{>body}}
+	</div>
+</section>
+
+<!-- Footer -->
+{{>_footer}}
+
+</body>
 </html>
